@@ -1,6 +1,4 @@
-// Import polyfills first
-import './polyfills.js'
-
+// Remove polyfills import
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import App from './App.vue'
