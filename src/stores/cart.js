@@ -79,7 +79,7 @@ export const useCartStore = defineStore('cart', () => {
     items.value = []
   }
   
-  function moveToWishlist(itemId, variant) {
+  async function moveToWishlist(itemId, variant) {
     const item = items.value.find(item => 
       item.id === itemId && 
       JSON.stringify(item.variant) === JSON.stringify(variant)
